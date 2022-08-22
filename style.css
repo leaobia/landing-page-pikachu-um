@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +30,20 @@ header{
     
 
 }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2.7px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 32px;
+    line-height: 39.73px;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+
+
+}
+
 main{
     background-color: tomato;
     flex-grow: 1;
