@@ -25,15 +25,15 @@ body{
 
 }
 header{
-    background-color: aqua;
+    
     height: 48px;
     
 
 }
 .logo{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 2.7px;
+    gap: 16px;
     text-decoration: none;
     color: var(--secundary-color);
     font-size: 32px;
@@ -45,12 +45,78 @@ header{
 }
 
 main{
-    background-color: tomato;
+
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+.title{
+
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+    font-family: 'Righteous', cursive;
+
+   
+
+}
+.title_text{
+    font-size: 20vw;
+    color: var(--white);
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+
+
+}
+.title_transparente{
+    position: absolute;
+    font-size: 27vw;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    font-family: 'Righteous', cursive;
+}
+.description{
+    grid-column: 1/7;
+    place-self: center start;
+    color: var(--secundary-color);
+    font-family: 'Righteous', cursive;
+
+
+}
+.description_title{
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+}
+.description_text{
+    font-size: 1.2rem;
+    width: 490px;
+    font-family: 'Righteous', cursive;
+}
+.action{
+    grid-column: 7/-1;
+    place-self: center end;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--secundary-color);
+    height: 100px;
+    width: 411px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    
     
 }
 footer{
-    background-color: purple;
+    text-align: center;
+    color: var(--secundary-color);
+    font-family: 'Righteous', cursive;
+    
     
 
 }
