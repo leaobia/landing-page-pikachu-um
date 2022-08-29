@@ -25,11 +25,9 @@ body{
 
 }
 header{
-    
     height: 48px;
-    
-
 }
+
 .logo{
     display: inline-flex;
     align-items: center;
@@ -40,8 +38,6 @@ header{
     line-height: 39.73px;
     font-weight: 400;
     font-family: 'Righteous', cursive;
-
-
 }
 
 main{
@@ -57,17 +53,13 @@ main{
     grid-column: 1/-1;
     place-self: center;
     font-family: 'Righteous', cursive;
-
-   
-
 }
+
 .title_text{
     font-size: 20vw;
     color: var(--white);
     color: #FFFFFF;
     font-family: 'Righteous', cursive;
-
-
 }
 .title_transparente{
     position: absolute;
@@ -84,6 +76,7 @@ main{
     place-self: center start;
     color: var(--secundary-color);
     font-family: 'Righteous', cursive;
+    text-align: center;
 
 
 }
@@ -128,3 +121,67 @@ footer{
 
 
 }
+/*TABLET*/
+ @media(max-width:960px){
+     body{
+         
+
+     }
+     :root{
+
+        --space-default:30px;
+    
+    
+    }
+    main{
+
+    
+        grid-template-columns: 1fr;
+        
+    }
+   
+    .description{
+        grid-row: 2;
+        grid-column: 1;
+        place-self: center;
+        text-align: center;
+       
+    
+    }
+    .title{
+        place-self: start center;
+    }
+    .action{
+        grid-column: 1;
+        grid-row: 2;
+        place-self: end center;
+    }
+    footer{
+        display: none;
+    }
+    .pikachu-image{
+        transform: translate(-50%,-60%);
+    
+    
+    }
+    @media (max-width: 640px) {
+        .title{
+            transform: translateY(30px);
+        }
+        .description_text{
+            display: none;
+        }
+        .description_title{
+            font-size: 10vw;
+        }
+        .action{
+            width: 100%;
+        }
+        .pikachu-image{
+            width: 90vw;
+            transform: translate(-50%,-50%);
+        }
+    }
+ }
+ 
+ 
